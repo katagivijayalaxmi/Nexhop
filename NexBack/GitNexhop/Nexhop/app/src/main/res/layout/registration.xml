@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nexhop.Registration"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/lbl_reg"
+        android:text="@string/create_acc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        style="@style/app_label"
+        />
+
+    <ScrollView
+        android:layout_below="@+id/lbl_reg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       android:layout_marginLeft="@dimen/pad_10dp"
+        android:layout_marginRight="@dimen/pad_10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_fname"
+            style="@style/edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email"
+            android:hint="@string/name"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:maxLength="20"
+            >
+        </EditText>
+
+        <!--<EditText
+            android:id="@+id/edt_lname"
+            style="@style/edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email"
+            android:hint="@string/lastname"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:singleLine="true"
+            android:maxLength="15">
+        </EditText>-->
+
+
+        <EditText
+            android:id="@+id/edt_phoneNo"
+            style="@style/edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email"
+            android:hint="@string/phoneno"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:singleLine="true"
+            android:maxLength="15"
+            android:inputType="number">
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_email"
+            style="@style/edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email"
+            android:hint="@string/email"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_password"
+            style="@style/edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:drawableLeft="@drawable/ic_password"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:maxLength="15"
+            android:imeActionId="@+id/edt_confirm_password"
+            android:imeOptions="actionUnspecified"
+            >
+        </EditText>
+
+        <!--<EditText
+            android:id="@+id/edt_confirm_password"
+            style="@style/edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:drawableLeft="@drawable/ic_password"
+            android:hint="@string/confirmpassword"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:maxLength="15"
+            android:imeActionId="@+id/btnReg"
+            android:imeOptions="actionUnspecified"
+            >
+        </EditText>-->
+        <Button
+            android:id="@+id/btnReg"
+            style="@style/btn_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad_30dp"
+            android:layout_marginLeft="@dimen/pad_20dp"
+            android:layout_marginRight="@dimen/pad_20dp"
+            android:text="@string/signup" >
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
